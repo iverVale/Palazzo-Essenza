@@ -1,0 +1,229 @@
+:root {
+    --bg-gradient: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.9));
+    --box-bg: rgba(255, 255, 255, 0.85);
+    --box-border: rgba(139, 105, 50, 0.3);
+    --title-color: #8b6932;
+    --subtitle-color: #666666;
+    --label-color: #555555;
+    --input-bg: rgba(0, 0, 0, 0.05);
+    --input-text: #333333;
+    --btn-bg: #8b6932;
+    --btn-text: #ffffff;
+    --link-color: #8b6932;
+}
+
+.dark-theme {
+    --bg-gradient: linear-gradient(rgba(20, 20, 20, 0.85), rgba(20, 20, 20, 0.9));
+    --box-bg: rgba(255, 255, 255, 0.08);
+    --box-border: rgba(255, 255, 255, 0.15);
+    --title-color: #f5e6c8;
+    --subtitle-color: #d4c2a5;
+    --label-color: #e8dcc7;
+    --input-bg: rgba(255, 255, 255, 0.15);
+    --input-text: #ffffff;
+    --btn-bg: linear-gradient(45deg, #c6a75e, #e6c97a);
+    --btn-text: #2b1d0e;
+    --link-color: #e6c97a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background: var(--bg-gradient), url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.5s ease;
+}
+
+.container {
+    background: var(--box-bg);
+    backdrop-filter: blur(15px);
+    padding: 50px 40px;
+    border-radius: 15px;
+    width: 450px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    border: 1px solid var(--box-border);
+    transition: 0.5s;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    color: var(--title-color);
+    letter-spacing: 2px;
+    transition: color 0.5s;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: var(--subtitle-color);
+    margin-top: 5px;
+    transition: color 0.5s;
+}
+
+.mensagem-sucesso {
+    background: rgba(76, 175, 80, 0.1);
+    color: #4CAF50;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 13px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(76, 175, 80, 0.3);
+    text-align: center;
+}
+
+.mensagem-erro {
+    background: rgba(244, 67, 54, 0.1);
+    color: #F44336;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 13px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(244, 67, 54, 0.3);
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    font-size: 13px;
+    color: var(--label-color);
+    display: block;
+    margin-bottom: 5px;
+    transition: color 0.5s;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background-color: var(--input-bg);
+    color: var(--input-text);
+    font-family: 'Poppins', sans-serif;
+    transition: 0.3s;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    border: 1px solid var(--link-color);
+}
+
+.dark-theme ::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    cursor: pointer;
+}
+
+::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+}
+
+.row {
+    display: flex;
+    gap: 15px;
+}
+
+.row .input-group {
+    flex: 1;
+}
+
+button.btn-submit {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: var(--btn-bg);
+    color: var(--btn-text);
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+button.btn-submit:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+.voltar {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 13px;
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.voltar:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 480px) {
+    .container {
+        width: 85%;
+        padding: 25px 15px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .header {
+        margin-bottom: 15px;
+
+        .subtitle {
+            font-size: 12px;
+        }
+
+        .input-group {
+            margin-bottom: 10px;
+        }
+
+        .input-group label {
+            font-size: 12px;
+        }
+
+        .input-group input,
+        .input-group textarea {
+            padding: 8px 10px;
+            font-size: 13px;
+        }
+
+        button.btn-submit {
+            padding: 10px;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+
+        .row {
+            flex-direction: column;
+            gap: 0;
+        }
+
+        .switch {
+            transform: scale(0.8);
+            transform-origin: top right;
+        }
+    }
+}
