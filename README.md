@@ -1,4 +1,4 @@
-# <p align="center"><img src="logo.png" alt="Palazzo Essenza Logo" width="180"></p>
+# <p align="center"><img src="assets/img/logo.png" alt="Palazzo Essenza Logo" width="180"></p>
 
 <h1 align="center">Palazzo Essenza</h1>
 
@@ -8,11 +8,11 @@
 </p>
 
 <p align="center">
+  <a href="app/Palazzo-Essenza.apk"><img src="https://img.shields.io/badge/Download-APK_Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Download APK"></a>
   <img src="https://img.shields.io/badge/PHP-8.x-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP 8">
   <img src="https://img.shields.io/badge/MySQL-Database-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
   <img src="https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
   <img src="https://img.shields.io/badge/CSS3-Glassmorphism-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
-  <img src="https://img.shields.io/badge/Android-Kotlin-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android">
   <img src="https://img.shields.io/badge/WhatsApp_API-Green_API-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp">
 </p>
 
@@ -23,29 +23,30 @@
 1. [Sobre o Projeto](#-sobre-o-projeto)
 2. [Principais Funcionalidades](#-principais-funcionalidades)
 3. [Design System & Experiência Visual (UX/UI)](#-design-system--experiência-visual-uxui)
-4. [Estrutura do Repositório](#-estrutura-do-repositório)
-5. [Arquitetura & Engenharia de Software](#-arquitetura--engenharia-de-software)
-6. [Modelo do Banco de Dados](#-modelo-do-banco-de-dados)
-7. [Integrações e APIs Externas](#-integrações-e-apis-externas)
-8. [Como Executar o Projeto Localmente](#-como-executar-o-projeto-localmente)
-9. [Segurança e Boas Práticas](#-segurança-e-boas-práticas)
-10. [Licença e Autoria](#-licença-e-autoria)
+4. [Estrutura Organizada do Repositório](#-estrutura-organizada-do-repositório)
+5. [Aplicativo Móvel Android (APK)](#-aplicativo-móvel-android-apk)
+6. [Arquitetura & Engenharia de Software](#-arquitetura--engenharia-de-software)
+7. [Modelo do Banco de Dados](#-modelo-do-banco-de-dados)
+8. [Integrações e APIs Externas](#-integrações-e-apis-externas)
+9. [Como Executar o Projeto Localmente](#-como-executar-o-projeto-localmente)
+10. [Segurança e Boas Práticas](#-segurança-e-boas-práticas)
+11. [Licença e Autoria](#-licença-e-autoria)
 
 ---
 
 ## 🍽️ Sobre o Projeto
 
-O **Palazzo Essenza** é um ecossistema digital desenvolvido para proporcionar uma experiência gastronômica premium inspirada na autêntica tradição italiana (*Alta Cucina Italiana*). A solução conecta clientes e a cozinha através de uma arquitetura omnichannel integrada:
+O **Palazzo Essenza** é um ecossistema digital desenvolvido para proporcionar uma experiência gastronômica de alto padrão inspirada na autêntica tradição italiana (*Alta Cucina Italiana*). A solução une clientes e a cozinha através de uma arquitetura omnichannel integrada:
 
 - **Plataforma Web Completa:** Desenvolvida em **PHP 8+** e **MySQL**, com interface moderna em **HTML5**, **CSS3 (Glassmorphism)** e **JavaScript Vanilla**, permitindo cardápio digital interativo, personalização de massas artesanais, carrinho com checkout inteligente e gestão de reservas.
-- **Aplicativo Móvel Android:** Desenvolvido em **Kotlin** e **Jetpack Compose** utilizando uma *Arquitetura Híbrida Centrada no Servidor (Server-Centric Hybrid)*, garantindo sincronização instantânea de dados, splash screen nativa com animação luminosa e tratamento de conectividade offline.
+- **Aplicativo Móvel Android:** Desenvolvido em **Kotlin** e **Jetpack Compose** com *Arquitetura Híbrida Centrada no Servidor (Server-Centric Hybrid)*, garantindo sincronização instantânea de dados, splash screen nativa com animação luminosa e tratamento de conectividade offline.
 - **Painel Administrativo:** Interface em tempo real para controle da cozinha e despacho de pedidos, disparando mensagens automáticas para o cliente via WhatsApp e E-mail a cada mudança de status.
 
 ---
 
 ## ✨ Principais Funcionalidades
 
-### 🍝 Cardápio Digital & "Monte sua Massa" (`cardapio.php` / `cardapio.css`)
+### 🍝 Cardápio Digital & "Monte sua Massa" (`cardapio.php`)
 - **Navegação Categorizada:** Entradas Clássicas, Pratos Principais, Sobremesas, Sucos e Bebidas Especiais.
 - **Customização de Pratos:** Seção interativa onde o cliente escolhe tipos de massa (Espaguete, Penne, Fusilli), molhos artesanais e adicionais (parmesão, bacon crocante, cogumelos frescos, frango em cubos, etc.), com cálculo dinâmico de valor.
 - **Modal de Seleção de Bebidas:** Seleção rápida e responsiva de opções adicionais (como sabores e tamanhos de sucos naturais).
@@ -59,14 +60,14 @@ O **Palazzo Essenza** é um ecossistema digital desenvolvido para proporcionar u
   - Validação matemática de integridade através do **Algoritmo de Luhn (Módulo 10)** antes do envio.
 - **Suporte a Múltiplos Pagamentos:** Pix, Cartão de Crédito, Cartão de Débito e Dinheiro (com cálculo automático de troco).
 
-### 📅 Reserva de Mesas (`reserva.php` / `reserva.css`)
+### 📅 Reserva de Mesas (`reserva.php`)
 - Sistema inteligente de agendamento validando:
   - Limite de até 10 pessoas por mesa.
   - Restrição de reservas apenas para o mês corrente.
   - Verificação de horário de funcionamento do restaurante (18:00 às 00:30).
 - Confirmação automática via WhatsApp com os dados da reserva.
 
-### 📦 Rastreamento de Pedidos (`meus_pedidos.php` / `meus_pedidos.css`)
+### 📦 Rastreamento de Pedidos (`meus_pedidos.php`)
 - Listagem detalhada dos pedidos do cliente com identificador único (`#ID`).
 - **Badges de Status Dinâmicos:**
   - 🟡 **Preparando:** Pedido recebido e em preparo pelo chef.
@@ -74,7 +75,7 @@ O **Palazzo Essenza** é um ecossistema digital desenvolvido para proporcionar u
   - 🟢 **Finalizado:** Pedido entregue ou retirado com sucesso.
 - Histórico de itens, observações, troco e opção de cancelamento de reservas com aviso imediato à administração.
 
-### 👨‍🍳 Painel Administrativo (`admin.php` / `admin.css`)
+### 👨‍🍳 Painel Administrativo (`admin.php`)
 - Visão geral de todos os pedidos ativos e reservas pendentes.
 - Atualização em um clique do status do pedido (`Preparando` ➡️ `Enviado` ➡️ `Finalizado`).
 - Despacho automático de notificações no WhatsApp do cliente e e-mail transacional a cada atualização.
@@ -100,50 +101,79 @@ O design foi construído seguindo diretrizes de sofisticação, combinando tons 
 
 ---
 
-## 📂 Estrutura do Repositório
+## 📂 Estrutura Organizada do Repositório
+
+O repositório está padronizado e separado por responsabilidades:
 
 ```plaintext
-palazzo/
-├── logo.png                # Identidade visual / Logo oficial em alta resolução
-├── logoP.ico               # Favicon oficial do restaurante
+Palazzo-Essenza/
+├── app/                                # Aplicativo Móvel Android
+│   ├── Palazzo-Essenza.apk             # Pacote APK instalável (~23.5 MB)
+│   └── README.md                       # Instruções de instalação do app
 │
-├── index.php               # Página inicial / Landing Page de boas-vindas
-├── index.css               # Estilos da Home, Hero Section, Nav e Botão de App
+├── assets/                             # Arquivos estáticos da interface
+│   ├── css/                            # Folhas de estilo modularizadas
+│   │   ├── admin.css                   # Estilos do painel gerencial
+│   │   ├── cardapio.css                # Estilos do cardápio e carrinho
+│   │   ├── index.css                   # Estilos da Home, Hero e navegação
+│   │   ├── login.css                   # Estilos das telas de autenticação
+│   │   ├── meus_pedidos.css            # Estilos do histórico e badges
+│   │   ├── reserva.css                 # Estilos do agendamento de mesas
+│   │   └── telacadastro.css            # Estilos da tela de registro
+│   └── img/                            # Imagens e ícones
+│       ├── logo.png                    # Logotipo oficial em alta resolução
+│       └── logoP.ico                   # Favicon do restaurante
 │
-├── cardapio.php            # Cardápio completo, montagem de massas e checkout
-├── cardapio.css            # Estilos do cardápio, modal de sucos e carrinho de compras
+├── database/                           # Banco de Dados MySQL
+│   ├── palazzo_db.sql                  # Script SQL com tabelas e dados iniciais
+│   └── README.md                       # Guia de importação do banco
 │
-├── login.php               # Interface de autenticação de usuários
-├── login.css               # Estilos em glassmorphism da tela de login
-├── telacadastro.php        # Formulário de criação de conta
-├── telacadastro.css        # Estilos da tela de cadastro de novos clientes
+├── src/                                # Bibliotecas e serviços externos
+│   ├── DSNConfigurator.php
+│   ├── Exception.php
+│   ├── OAuth.php
+│   ├── OAuthTokenProvider.php
+│   ├── PHPMailer.php                   # Biblioteca PHPMailer para e-mails
+│   ├── POP3.php
+│   └── SMTP.php
 │
-├── meus_pedidos.php        # Histórico de pedidos e acompanhamento em tempo real
-├── meus_pedidos.css        # Estilos dos cards de pedidos e badges de status
-│
-├── reserva.php             # Agendamento e reserva de mesas
-├── reserva.css             # Estilos do formulário de reservas
-│
-├── perfil.php              # Edição de perfil do usuário e upload de avatar
-├── admin.php               # Painel gerencial e despacho de pedidos
-├── admin.css               # Estilos do dashboard administrativo
-│
-├── conexao.php             # Conexão com banco de dados MySQL via PDO
-├── finalizar_pedido.php    # Processamento de compras, transações e disparo de APIs
-├── confirmar_entrega.php   # Confirmação do recebimento pelo cliente
-├── imprimir_pedido.php     # Layout para impressão térmica de comanda
-│
-├── processa_login.php      # Lógica de login e validação BCRYPT
-├── processa_cadastro.php   # Cadastro, hash de senha e geração de tokens 2FA
-├── ativar_conta.php        # Validação do código de ativação em duas etapas
-├── recuperar_senha.php     # Solicitação de recuperação de senha
-├── nova_senha.php          # Redefinição de senha com token
-│
-└── src/                    # Biblioteca PHPMailer para envio de e-mails transacionais
-    ├── PHPMailer.php
-    ├── SMTP.php
-    └── Exception.php
+├── index.php                           # Página inicial / Landing Page
+├── cardapio.php                        # Cardápio interativo e checkout
+├── login.php                           # Login de usuários
+├── telacadastro.php                    # Formulário de cadastro
+├── meus_pedidos.php                    # Acompanhamento de pedidos e reservas
+├── reserva.php                         # Agendamento de mesas
+├── perfil.php                          # Edição de perfil do cliente
+├── admin.php                           # Painel de gestão da cozinha
+├── conexao.php                         # Conexão PDO com MySQL
+├── finalizar_pedido.php                # Processamento do pedido e APIs
+├── confirmar_entrega.php               # Confirmação de recebimento
+├── imprimir_pedido.php                 # Impressão térmica de comanda
+├── processa_login.php                  # Validação de credenciais e BCRYPT
+├── processa_cadastro.php               # Registro de novos usuários
+├── ativar_conta.php                    # Validação do código em duas etapas
+├── recuperar_senha.php                 # Solicitação de redefinição de senha
+├── nova_senha.php                      # Criação de nova senha
+├── logout.php                          # Encerramento de sessão
+└── README.md                           # Documentação oficial do projeto
 ```
+
+---
+
+## 📱 Aplicativo Móvel Android (APK)
+
+O aplicativo oficial está disponível diretamente na pasta [`app/`](./app):
+
+- 📦 **Arquivo:** [`app/Palazzo-Essenza.apk`](./app/Palazzo-Essenza.apk)
+- ⚙️ **Versão:** 1.0 (SDK 24+)
+- 🎨 **Tecnologia:** Kotlin + Jetpack Compose + Material Design 3
+- 🚀 **Funcionalidades:**
+  - Splash Screen nativa animada com efeito *Breathing Light*.
+  - Navegação nativa sincronizada com `BackHandler`.
+  - Tratamento de conexão com tela offline amigável.
+  - Abertura direta de discador, WhatsApp e cliente de e-mail.
+
+Para instruções completas de instalação, consulte o guia em [app/README.md](./app/README.md).
 
 ---
 
@@ -164,18 +194,11 @@ graph TD
     GreenAPI -->|Mensagem no WhatsApp| UserWeb
 ```
 
-### 📱 Aplicativo Android Híbrido (*Server-Centric*)
-- **Tecnologias:** Kotlin, Jetpack Compose, Material Design 3.
-- **Splash Screen com Efeito Breathing:** Transição visual suave com animação luminosa de pulso antes de carregar a tela principal.
-- **Tratamento de Queda de Conexão:** Módulo `isNetworkAvailable` que exibe tela offline nativa amigável com botão de "Tentar Novamente".
-- **Intercepção de Esquemas Externos (`shouldOverrideUrlLoading`):** Suporte nativo para abrir discador (`tel:`), WhatsApp (`whatsapp://`) ou cliente de e-mail (`mailto:`).
-- **Gestão de Histórico (`BackHandler`):** O botão voltar físico/gesto do Android navega pelas páginas internas da aplicação antes de sair.
-
 ---
 
 ## 🗄️ Modelo do Banco de Dados
 
-O banco de dados relacional é estruturado em tabelas otimizadas com suporte a integridade referencial:
+O script completo está disponível em [`database/palazzo_db.sql`](./database/palazzo_db.sql):
 
 - **`usuarios`**: Controle de usuários, contendo `nome`, `email`, `senha` (hash BCRYPT), `telefone`, `foto_perfil` (MEDIUMBLOB), `codigo_ativacao` (2FA) e flag `is_admin`.
 - **`categorias`**: Separação dos pratos (`Entradas Clássicas`, `Pratos Principais`, `Sobremesas`, `Bebidas`).
@@ -212,13 +235,13 @@ O banco de dados relacional é estruturado em tabelas otimizadas com suporte a i
 
 1. **Clonar o Repositório:**
    ```bash
-   git clone https://github.com/seu-usuario/palazzo-essenza.git
-   cd palazzo-essenza
+   git clone https://github.com/iverVale/Palazzo-Essenza.git
+   cd Palazzo-Essenza
    ```
 
 2. **Configurar o Banco de Dados:**
-   - Crie uma base de dados no seu gerenciador MySQL (ex: `palazzo_db`).
-   - Importe o script SQL disponível com as tabelas e dados iniciais.
+   - Crie uma base de dados no seu MySQL (ex: `palazzo_db`).
+   - Importe o arquivo `database/palazzo_db.sql` via phpMyAdmin ou terminal.
    - Ajuste as credenciais no arquivo `conexao.php`:
      ```php
      $host = 'localhost';
@@ -230,7 +253,7 @@ O banco de dados relacional é estruturado em tabelas otimizadas com suporte a i
 3. **Iniciar o Servidor:**
    - Se estiver usando o **XAMPP**, mova a pasta do projeto para `htdocs` e acesse no navegador:
      ```plaintext
-     http://localhost/palazzo-essenza/
+     http://localhost/Palazzo-Essenza/
      ```
    - Ou utilize o servidor embutido do próprio PHP:
      ```bash

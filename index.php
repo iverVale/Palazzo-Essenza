@@ -4,16 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="logoP.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/img/logoP.ico" type="image/x-icon">
     <title>Palazzo Essenza | Início</title>
     <!-- Certifique-se de que o nome do seu arquivo CSS principal esteja correto aqui -->
-    <link rel="stylesheet" href="index.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="assets/css/index.css?v=<?php echo time(); ?>">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>
     <div class="logo">
-        <img src="logo.png" alt="Logo" width="120px">
+        <img src="assets/img/logo.png" alt="Logo" width="120px">
     </div>
     <div class="nav-links <?= !isset($_SESSION['usuario_id']) ? 'deslogado' : '' ?>" id="nav-links">
         <a href="cardapio.php">Cardápio</a>

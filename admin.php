@@ -108,6 +108,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['acao']) && $_POST['aca
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link rel="shortcut icon" href="assets/img/logoP.ico" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Painel Administrativo | Palazzo Essenza</title>
@@ -117,7 +118,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['acao']) && $_POST['aca
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     
     <!-- Link com quebra automática de cache -->
-    <link rel="stylesheet" href="admin.css?v=<?= time() ?>">
+    <link rel="stylesheet" href="assets/css/admin.css?v=<?= time() ?>">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <!-- Forçando os estilos exatos da Imagem 2 diretamente na página -->

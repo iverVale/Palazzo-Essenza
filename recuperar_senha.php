@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="shortcut icon" href="logoP.ico" type="image/x-icon">
+<link rel="shortcut icon" href="assets/img/logoP.ico" type="image/x-icon">
 <title>Palazzo | Recuperar Senha</title>
-<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="assets/css/index.css">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
     body { height: 100vh; background: var(--bg-gradient), url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092') no-repeat center center/cover; display: flex; align-items: center; justify-content: center; font-family: 'Poppins', sans-serif;}

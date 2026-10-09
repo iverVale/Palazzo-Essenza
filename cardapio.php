@@ -8,9 +8,9 @@ require 'conexao.php';
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="shortcut icon" href="logoP.ico" type="image/x-icon">
+<link rel="shortcut icon" href="assets/img/logoP.ico" type="image/x-icon">
 <title>Palazzo Essenza | Cardápio</title>
-<link rel="stylesheet" href="cardapio.css">
+<link rel="stylesheet" href="assets/css/cardapio.css">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
     #carrinho-container {

@@ -108,11 +108,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['cancelar_reserva_id']
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link rel="shortcut icon" href="assets/img/logoP.ico" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Palazzo Essenza | Meus Pedidos e Reservas</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="meus_pedidos.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/meus_pedidos.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
     
     <style>
